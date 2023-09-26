@@ -1,0 +1,6 @@
+{
+    "name": "my-python-chatbot",
+    "version": "1.0.0",
+    "runtime": "python-3.9",
+    "entrypoint": "GPTMine.py"
+  }
