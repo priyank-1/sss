@@ -1,6 +1,15 @@
 {
-    "name": "my-python-chatbot",
-    "version": "1.0.0",
-    "runtime": "python-3.9",
-    "entrypoint": "GPTMine.py"
-  }
+  "version": 3.7,
+  "builds": [
+    {
+      "src": "GPTMine.py", 
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "GPTMine.py"  
+    }
+  ]
+}
